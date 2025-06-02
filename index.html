@@ -1,8 +1,289 @@
 <!DOCTYPE html>
-<html>
-  <body>
-    <h1>Rakshitha</h1>
-    <p>Welcome to my Wesbite!</p>
-    <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"/>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakshitha's Career Chronicles - A Netflix Original Series</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div class="scroll-progress"></div>
+    
+    <header class="netflix-header">
+        <div class="nav-container">
+            <div class="logo">THE RUNTIME JOURNEY</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li onclick="scrollToSection('hero')">Home</li>
+                    <li onclick="scrollToSection('episodes')">Episodes</li>
+                    <li onclick="scrollToSection('skills')">Skills</li>
+                    <li onclick="scrollToSection('contact')">Contact</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <h1 class="series-title">Rakshitha's Career Chronicles</h1>
+            <h2 class="series-subtitle">A Netflix Original Series</h2>
+            <p class="series-description">
+                Follow the epic journey of a software developer's rise through the tech industry. 
+                From debugging nightmares to scaling applications, witness the triumphs, 
+                failures, and everything in between.
+            </p>
+            <div class="cta-buttons">
+                <a href="#episodes" class="btn btn-primary">
+                    <i class="fas fa-play"></i> Watch Now
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i> More Info
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="episodes" class="episodes-section">
+        <h2 class="section-title">Season 1: Episodes</h2>
+        <div class="episodes-grid">
+            <div class="episode-card">
+                <div class="episode-thumbnail">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="episode-content">
+                    <div class="episode-number">EP 1</div>
+                    <h3 class="episode-title">Accenture: The Origin Story</h3>
+                    <p class="episode-description">
+                        Fresh out of college with a computer science degree, our protagonist enters the tech world with dreams of changing everything. 
+                        Little did she know, she’d soon be navigating legacy codebases, rewriting Java microservices, and aligning with global release cycles across 28+ major rollouts. 
+                        Watch Rakshitha battle deadline dragons, performance bugs, and the age-old enemy: inefficient SQL, emerging not just as a developer, but a systems thinker with 100% delivery streak and a knack for clean, maintainable code.
+                    </p>
+                    <div class="episode-meta">
+                        <div class="episode-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2017-2019</span>
+                        </div>
+                        <div class="episode-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.2/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="episode-card">
+                <div class="episode-thumbnail">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="episode-content">
+                    <div class="episode-number">EP 2</div>
+                    <h3 class="episode-title">Deloitte: Behind the Codebase</h3>
+                    <p class="episode-description">
+                        Software Engineer at Deloitte. Imposter syndrome hits hard as our hero navigates code reviews, daily stand-ups, and the mysterious depths of a legacy codebase. 
+                        But she quickly learns to fight back with Java Spring Boot APIs, Oracle & PostgreSQL queries, and a Python-based automation framework that slashes regression time by 70%, what? 
+                        As production issues mount, Rakshitha becomes the calm in the chaos, resolving 50+ incidents, mentoring junior devs, and shipping stable features to over a million users. 
+                        She's no longer just part of the team! she’s becoming the backbone.
+                    </p>
+                    <div class="episode-meta">
+                        <div class="episode-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2019-2023</span>
+                        </div>
+                        <div class="episode-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="episode-card">
+                <div class="episode-thumbnail">
+                    <i class="fas fa-fire"></i>
+                </div>
+                <div class="episode-content">
+                    <div class="episode-number">EP 3</div>
+                    <h3 class="episode-title">Plot Twist: The Grad School Gambit</h3>
+                    <p class="episode-description">
+                        Just when the dust settles and promotions loom, our protagonist does the unthinkable. She hits pause on a rising career to pursue a Master’s in Computer Science. Armed with real-world scars and a hunger for deeper knowledge, Rakshitha dives into academic algorithms, research labs, and late-night debugging marathons.
+                    </p>
+                    <div class="episode-meta">
+                        <div class="episode-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2023-2025</span>
+                        </div>
+                        <div class="episode-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="episode-card">
+                <div class="episode-thumbnail">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="episode-content">
+                    <div class="episode-number">EP 4</div>
+                    <h3 class="episode-title">The Professor’s Code</h3>
+                    <p class="episode-description">
+                        Under the mentorship of the department’s most formidable mind, our protagonist steps into the 
+                        academic battlefield, not as a student, but as a builder. Rakshitha is now a <strong>Research Assistant</strong>, 
+                        crafting responsive frontends and reliable backend modules for platforms used by over 1,200 faculty and students. 
+                        Deadlines are tight, expectations are high, and the codebase? Written to serve academia in real time. 
+                        But with clean CSS, rock-solid C#, and an instinct for user-centered design, 
+                        she proves she’s not just here to learn, she’s here to leave a mark.
+                    </p>
+                    <div class="episode-meta">
+                        <div class="episode-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="episode-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="episode-card">
+                <div class="episode-thumbnail">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="episode-content">
+                    <div class="episode-number">EP 5</div>
+                    <h3 class="episode-title">Campus Core: The Data Guardian</h3>
+                    <p class="episode-description">
+                        While other students studied the systems, she was busy securing them. As a Graduate Assistant, 
+                        Rakshitha took charge of critical academic infrastructure, engineering ASP.NET applications and managing 
+                        100,000+ student and employee records with precision. From streamlining SQL reports to optimizing backend 
+                        performance, she wasn’t just supporting the university, she was future-proofing it. 
+                        Balancing grad classes with enterprise-scale responsibilities, 
+                        she proved once again: this isn’t just education, it’s execution.
+                    </p>
+                    <div class="episode-meta">
+                        <div class="episode-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2024-2025</span>
+                        </div>
+                        <div class="episode-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="episode-card">
+                <div class="episode-thumbnail">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div class="episode-content">
+                    <div class="episode-number">EP 6</div>
+                    <h3 class="episode-title">The Current Story: Version Ready</h3>
+                    <p class="episode-description">
+                        Master’s degree: unlocked. Legacy systems: conquered. Regression cycles, SQL optimizations, 
+                        AI prototypes? she’s done it all. Now, after years of building, learning, and leading, 
+                        Rakshitha stands at the edge of her next big deployment: the perfect opportunity. 
+                        With a résumé full of clean architecture, cross-functional impact, and production-ready code, 
+                        she’s not just job-hunting but she’s rallying back into the tech world with clarity, purpose, 
+                        and a full-stack toolkit. The system is ready. The developer is online. 
+                        Stay tuned—this story’s just getting started.
+                    </p>
+                    <div class="episode-meta">
+                        <div class="episode-duration">
+                            <i class="fas fa-clock"></i>
+                            <span>2025-Present</span>
+                        </div>
+                        <div class="episode-rating">
+                            <i class="fas fa-star"></i>
+                            <span>5.0/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+            <h2 class="section-title">Technical Arsenal</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                    <div class="skill-name">JavaScript</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-react"></i></div>
+                    <div class="skill-name">React</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                    <div class="skill-name">AWS</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-name">Databases</div>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="contact-content">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="series-description">
+                Ready to start the next season together? Let's connect and create something amazing.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:your.email@example.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://twitter.com/yourusername" class="contact-link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
